@@ -1,0 +1,461 @@
+.workforce-section {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.workforce-container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workforce-header {
+  text-align: center;
+  margin-bottom: 80px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.workforce-header.animate-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.workforce-subtitle {
+  color: #9ca3af;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+}
+
+.workforce-title {
+  color: #1f2937;
+  font-family: 'Tasaorbiterdisplay', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.workforce-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.workforce-left-section {
+  flex: 0 0 auto;
+  position: sticky;
+  top: 100px;
+}
+
+.workforce-center-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.workforce-right-section {
+  flex: 0 0 auto;
+}
+
+.workforce-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.expanding-container {
+  flex: 1;
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 0;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+
+.expanding-container.expanded {
+  padding: 24px;
+  width: 100%;
+  opacity: 1;
+}
+
+.typewriter-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #374151;
+  margin: 0;
+  flex: 1;
+  white-space: pre-line;
+}
+
+.cursor {
+  color: #3b82f6;
+  font-weight: bold;
+  animation: blink 1s infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Coaching Session Card */
+.coaching-session-card {
+  background: linear-gradient(135deg, #e8f5e8 0%, #f0f9f0 100%);
+  border: 1px solid #d1fae5;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.1);
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.8s ease-out;
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.coaching-session-card.slide-up {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.coaching-session-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(16, 185, 129, 0.2);
+}
+
+.coaching-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.coaching-icon {
+  width: 48px;
+  height: 48px;
+  background: #10b981;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.coaching-title h3 {
+  color: #1f2937;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.coaching-title p {
+  color: #6b7280;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.coaching-coaches {
+  margin-bottom: 24px;
+}
+
+.coach-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.coach-item:last-child {
+  margin-bottom: 0;
+}
+
+.coach-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.coach-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.coach-info h4 {
+  color: #1f2937;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 2px 0;
+}
+
+.coach-info p {
+  color: #6b7280;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.coaching-features-combined {
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  border: 1px solid #10b981;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.feature-item:last-child {
+  margin-bottom: 0;
+}
+
+.feature-item span {
+  color: #374151;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Book Coaching Button */
+.book-coaching-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.book-coaching-btn {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 28px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.book-coaching-btn:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.4);
+}
+
+.book-coaching-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
+}
+
+.workforce-image {
+  max-width: 400px;
+  width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  opacity: 1;
+}
+
+.workforce-image:hover {
+  transform: scale(1.02);
+}
+
+.persona-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 280px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nicole-persona {
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+
+.nicole-persona.slide-in-left {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.persona-info {
+  flex: 1;
+}
+
+.persona-label {
+  color: #9ca3af;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 4px 0;
+}
+
+.persona-name {
+  color: #1f2937;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.persona-role {
+  color: #6b7280;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.persona-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.persona-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .workforce-content {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .workforce-left-section {
+    position: static;
+  }
+
+  .workforce-title {
+    font-size: 2.5rem;
+  }
+
+  .persona-card {
+    min-width: auto;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .coaching-session-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .workforce-section {
+    padding: 60px 0;
+  }
+
+  .workforce-container {
+    padding: 0 16px;
+  }
+
+  .workforce-header {
+    margin-bottom: 60px;
+  }
+
+  .workforce-title {
+    font-size: 2rem;
+  }
+
+  .workforce-content {
+    gap: 30px;
+  }
+
+  .expanding-container.expanded {
+    padding: 20px;
+  }
+
+  .typewriter-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .workforce-container {
+    padding: 0 12px;
+  }
+
+  .workforce-title {
+    font-size: 1.75rem;
+  }
+
+  .expanding-container.expanded {
+    padding: 16px;
+  }
+
+  .typewriter-text {
+    font-size: 14px;
+  }
+
+  .persona-card {
+    padding: 20px;
+  }
+}

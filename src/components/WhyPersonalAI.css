@@ -1,0 +1,584 @@
+:root {
+  --night-sky: #1a1a2e;
+  --alley-component-library--gray--700: #374151;
+}
+
+.why-personal-ai-section {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.why-personal-ai-container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-personal-ai-content {
+  text-align: center;
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.why-personal-ai-content.animate-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.large-h2 {
+  color: var(--night-sky);
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 24px 0;
+  font-family: 'Tasaorbiterdisplay', sans-serif;
+}
+
+.center-align {
+  color: var(--alley-component-library--gray--700);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  margin: 0;
+  max-width: 600px;
+  font-family: 'Inter', sans-serif;
+}
+
+.why-personal-ai-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: linear-gradient(#c5baca, #9a8aa3);
+  border-radius: 24px;
+  width: 90%;
+  padding: 40px 20px;
+}
+
+.center-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .why-personal-ai-section {
+    padding: 60px 0;
+  }
+  
+  .large-h2 {
+    font-size: 2rem;
+  }
+  
+  .why-personal-ai-content {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-personal-ai-section {
+    padding: 40px 0;
+  }
+  
+  .why-personal-ai-container {
+    padding: 0 16px;
+  }
+  
+  .large-h2 {
+    font-size: 1.75rem;
+  }
+  
+  .center-align {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
+  .why-personal-ai-content {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-personal-ai-container {
+    padding: 0 12px;
+  }
+  
+  .large-h2 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+  }
+  
+  .center-align {
+    font-size: 13px;
+    line-height: 22px;
+  }
+}
+
+/* Dashboard Container Styles */
+.dashboard-container {
+  background: #f8fafc;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  padding: 0;
+  margin-top: 40px;
+  width: 90%;
+  max-width: 800px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow: hidden;
+}
+
+.dashboard-container.slide-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px 16px 24px;
+  border-bottom: 1px solid #e2e8f0;
+  background: white;
+}
+
+.dashboard-icon {
+  width: 48px;
+  height: 48px;
+  background: #3b82f6;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.dashboard-title h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 4px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.dashboard-title p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.dashboard-content {
+  background: white;
+  margin: 0 24px 24px 24px;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-metric h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 8px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.dashboard-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0 0 16px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.refresh-btn {
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  color: #374151;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Inter', sans-serif;
+  align-self: flex-start;
+}
+
+.refresh-btn:hover {
+  background: #e5e7eb;
+  border-color: #9ca3af;
+}
+
+.scrollable-content {
+  max-height: 250px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 8px;
+  margin-top: 16px;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+  margin: 4px 0;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+.scrollable-content::-webkit-scrollbar-corner {
+  background: #f1f5f9;
+}
+
+.company-bubbles {
+  position: relative;
+  min-height: 400px;
+  padding: 20px 0;
+}
+
+.bubble {
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  position: absolute;
+}
+
+/* Individual bubble positioning and sizes */
+.company-logo {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.company-name {
+  font-size: 8px;
+  margin-bottom: 1px;
+  opacity: 0.9;
+  line-height: 1;
+}
+
+.job-count {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.bubble-google {
+  background: #4285f4;
+  width: 80px;
+  height: 80px;
+  top: 20px;
+  left: 15%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.bubble-microsoft {
+  background: #00a1f1;
+  width: 70px;
+  height: 70px;
+  top: 80px;
+  right: 20%;
+  animation: float 7s ease-in-out infinite 0.5s;
+}
+
+.bubble-apple {
+  background: #007aff;
+  width: 75px;
+  height: 75px;
+  top: 40px;
+  right: 10%;
+  animation: float 5.5s ease-in-out infinite 1s;
+}
+
+.bubble-meta {
+  background: #1877f2;
+  width: 65px;
+  height: 65px;
+  top: 140px;
+  left: 25%;
+  animation: float 6.5s ease-in-out infinite 1.5s;
+}
+
+.bubble-amazon {
+  background: #ff9900;
+  width: 85px;
+  height: 85px;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: float 8s ease-in-out infinite 2s;
+}
+
+.bubble-netflix {
+  background: #e50914;
+  width: 60px;
+  height: 60px;
+  top: 200px;
+  right: 15%;
+  animation: float 5s ease-in-out infinite 2.5s;
+}
+
+.bubble-tesla {
+  background: #cc0000;
+  width: 70px;
+  height: 70px;
+  top: 240px;
+  left: 20%;
+  animation: float 7.5s ease-in-out infinite 3s;
+}
+
+.bubble-nvidia {
+  background: #76b900;
+  width: 65px;
+  height: 65px;
+  top: 180px;
+  left: 60%;
+  animation: float 6s ease-in-out infinite 3.5s;
+}
+
+.bubble-salesforce {
+  background: #00a1e0;
+  width: 55px;
+  height: 55px;
+  top: 280px;
+  right: 25%;
+  animation: float 5.5s ease-in-out infinite 4s;
+}
+
+.bubble-uber {
+  background: #000000;
+  width: 60px;
+  height: 60px;
+  top: 320px;
+  left: 40%;
+  animation: float 6.5s ease-in-out infinite 4.5s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Dashboard Footer */
+.dashboard-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 60px;
+  padding: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.footer-logo {
+  flex-shrink: 0;
+}
+
+.footer-text {
+  text-align: center;
+}
+
+.footer-brand {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 4px 0;
+}
+
+.footer-link {
+  font-size: 12px;
+  color: #3b82f6;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-rights {
+  font-size: 11px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Dashboard Actions */
+.dashboard-actions {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 16px;
+}
+
+.explore-trends-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+.explore-trends-btn:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+}
+
+.explore-trends-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+.explore-trends-btn svg {
+  flex-shrink: 0;
+}
+
+/* Responsive Dashboard */
+@media (max-width: 768px) {
+  .dashboard-container {
+    width: 95%;
+    margin-top: 30px;
+  }
+  
+  .dashboard-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    padding: 16px 20px 12px 20px;
+  }
+  
+  .dashboard-content {
+    margin: 0 20px 20px 20px;
+    padding: 16px;
+  }
+  
+  .dashboard-metric h4 {
+    font-size: 18px;
+  }
+  
+  .scrollable-content {
+    max-height: 250px;
+  }
+  
+  .company-bubbles {
+    min-height: 200px;
+  }
+  
+  .bubble {
+    width: 60px;
+    height: 60px;
+    padding: 8px 12px;
+    font-size: 10px;
+  }
+  
+  .company-logo {
+    font-size: 12px;
+  }
+  
+  .job-count {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-container {
+    width: 98%;
+    margin-top: 20px;
+  }
+  
+  .dashboard-header {
+    padding: 12px 16px 8px 16px;
+  }
+  
+  .dashboard-content {
+    margin: 0 16px 16px 16px;
+    padding: 12px;
+  }
+  
+  .dashboard-metric h4 {
+    font-size: 16px;
+  }
+  
+  .dashboard-subtitle {
+    font-size: 12px;
+  }
+  
+  .scrollable-content {
+    max-height: 180px;
+  }
+  
+  .company-bubbles {
+    gap: 8px;
+    min-height: 160px;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  }
+  
+  .bubble {
+    width: 50px;
+    height: 50px;
+    padding: 6px 8px;
+    font-size: 9px;
+  }
+  
+  .company-logo {
+    font-size: 10px;
+  }
+  
+  .company-name {
+    font-size: 7px;
+  }
+  
+  .job-count {
+    font-size: 8px;
+  }
+}

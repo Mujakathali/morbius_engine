@@ -1,0 +1,309 @@
+.payment-plan-section {
+  width: 100%;
+  min-height: 100vh;
+  background: #e0f2fe66;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.payment-plan-container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment-plan-header {
+  text-align: center;
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.payment-plan-header.animate-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.payment-plan-title {
+  color: #1f2937;
+  font-family: 'Tasaorbiterdisplay', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.payment-plan-subtitle {
+  color: #6b7280;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 600px;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.pricing-cards.slide-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pricing-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-card-student {
+  border: 2px solid #3b82f6;
+  position: relative;
+}
+
+.student-badge {
+  position: absolute;
+  top: -12px;
+  right: 16px;
+  background: #3b82f6;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.star-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+}
+
+.plan-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 16px 0;
+}
+
+.plan-price {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+}
+
+.price {
+  font-family: 'Tasaorbiterdisplay', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3b82f6;
+}
+
+.price-crossed {
+  font-family: 'Tasaorbiterdisplay', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.price-period {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6b7280;
+}
+
+.plan-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6b7280;
+  margin: 0;
+}
+
+.card-features {
+  flex: 1;
+  margin-bottom: 32px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #374151;
+}
+
+.feature-item:last-child {
+  margin-bottom: 0;
+}
+
+.feature-icon {
+  width: 20px;
+  height: 20px;
+  background: #10b981;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.plan-button {
+  width: 100%;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.plan-button-free {
+  background: transparent;
+  border: 2px solid #e5e7eb;
+  color: #374151;
+}
+
+.plan-button-free:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.plan-button-popular {
+  background: #3b82f6;
+  color: white;
+}
+
+.plan-button-popular:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.plan-button-student {
+  background: #3b82f6;
+  color: white;
+}
+
+.plan-button-student:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .pricing-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .payment-plan-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .payment-plan-section {
+    padding: 60px 0;
+  }
+  
+  .payment-plan-container {
+    padding: 0 16px;
+  }
+  
+  .payment-plan-header {
+    margin-bottom: 40px;
+  }
+  
+  .payment-plan-title {
+    font-size: 2rem;
+  }
+  
+  .payment-plan-subtitle {
+    font-size: 14px;
+  }
+  
+  .pricing-cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .pricing-card {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-plan-container {
+    padding: 0 12px;
+  }
+  
+  .payment-plan-title {
+    font-size: 1.75rem;
+  }
+  
+  .pricing-card {
+    padding: 20px 16px;
+  }
+  
+  .card-header {
+    margin-bottom: 24px;
+  }
+  
+  .card-features {
+    margin-bottom: 24px;
+  }
+  
+  .plan-button {
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+}

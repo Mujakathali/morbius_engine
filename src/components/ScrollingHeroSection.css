@@ -1,0 +1,245 @@
+.scrolling-hero-section {
+  min-height: 100vh;
+  background-image: linear-gradient(135deg, #121111, #282121);
+  background-position: 50% 0, 0 0;
+  background-repeat: no-repeat, repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  .scrolling-hero-section {
+    min-height: auto;
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .scrolling-hero-section {
+    min-height: auto;
+    padding: 40px 20px;
+    background-size: 110%, auto;
+    border-bottom: 0.5px solid #a9aec380;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.scrolling-hero-container {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Background decorative curves */
+.bg-curve {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  border: 3px solid;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.bg-curve-left {
+  top: -100px;
+  left: -150px;
+  border-color: #ff6b9d;
+  transform: rotate(-15deg);
+}
+
+.bg-curve-right {
+  top: -100px;
+  right: -150px;
+  border-color: #ff6b9d;
+  transform: rotate(15deg);
+}
+
+/* Top tagline */
+.hero-tagline {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-tagline span {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #888888;
+  text-transform: uppercase;
+}
+
+/* Animated text container */
+.animated-text-container {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.text-line {
+  position: absolute;
+  width: 200%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
+  left: -50%;
+}
+
+.first-line {
+  top: 20px;
+}
+
+.second-line {
+  top: 80px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.text-word {
+  font-size: clamp(32px, 4vw, 64px);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.profile-img {
+  width: clamp(40px, 5vw, 60px);
+  height: clamp(40px, 5vw, 60px);
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #333333;
+  flex-shrink: 0;
+}
+
+/* Get Started button */
+.hero-cta {
+  text-align: center;
+}
+
+.get-started-btn {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.get-started-btn:hover {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .scrolling-hero-section {
+    padding: 0 16px;
+  }
+  
+  .animated-text-container {
+    height: 250px;
+    margin-bottom: 60px;
+  }
+  
+  .text-line {
+    height: 100px;
+  }
+  
+  .second-line {
+    top: 120px;
+  }
+  
+  .text-with-images {
+    gap: 20px;
+  }
+  
+  .hero-tagline {
+    margin-bottom: 40px;
+  }
+  
+  .hero-tagline span {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  
+  .bg-curve {
+    width: 200px;
+    height: 400px;
+  }
+  
+  .bg-curve-left {
+    left: -100px;
+  }
+  
+  .bg-curve-right {
+    right: -100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .animated-text-container {
+    height: 200px;
+  }
+  
+  .text-line {
+    height: 80px;
+  }
+  
+  .second-line {
+    top: 100px;
+  }
+  
+  .text-with-images {
+    gap: 15px;
+  }
+}
+
+/* Smooth animations */
+@media (prefers-reduced-motion: no-preference) {
+  .text-line {
+    transition: transform 0.1s ease-out;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .profile-img {
+    border-color: #ffffff;
+  }
+  
+  .bg-curve-left,
+  .bg-curve-right {
+    border-color: #ffffff;
+  }
+}

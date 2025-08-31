@@ -1,0 +1,75 @@
+.brand-logos-section {
+  width: 100%;
+  padding: 60px 0;
+  background: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+
+.brand-logos-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.brand-logos-track {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  animation: scrollLogos 20s linear infinite;
+  width: max-content;
+}
+
+.brand-logo {
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.brand-logo:hover {
+  opacity: 1;
+}
+
+@keyframes scrollLogos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .brand-logos-section {
+    padding: 40px 0;
+  }
+  
+  .brand-logos-track {
+    gap: 60px;
+  }
+  
+  .brand-logo {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-logos-section {
+    padding: 30px 0;
+  }
+  
+  .brand-logos-track {
+    gap: 40px;
+  }
+  
+  .brand-logo {
+    font-size: 14px;
+  }
+}
