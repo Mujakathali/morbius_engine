@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" fill="none">
+  <style>
+    .primary { fill: #3b82f6; }
+    .secondary { fill: #93c5fd; }
+    .accent { fill: #1e40af; }
+    .outline { stroke: #1e40af; stroke-width: 2; }
+  </style>
+  <rect width="500" height="150" fill="white"/>
+  
+  <!-- Bar Chart -->
+  <rect x="100" y="60" width="30" height="70" rx="3" class="primary outline"/>
+  <rect x="140" y="40" width="30" height="90" rx="3" class="secondary outline"/>
+  <rect x="180" y="70" width="30" height="60" rx="3" class="primary outline"/>
+  <rect x="220" y="30" width="30" height="100" rx="3" class="secondary outline"/>
+  <rect x="260" y="50" width="30" height="80" rx="3" class="primary outline"/>
+  
+  <!-- Magnifying Glass -->
+  <circle cx="350" cy="60" r="25" fill="white" class="outline"/>
+  <rect x="365" y="80" width="10" height="30" rx="5" transform="rotate(-45 365 80)" class="accent"/>
+  
+  <!-- Document -->
+  <rect x="50" y="40" width="40" height="50" rx="3" fill="white" class="outline"/>
+  <line x1="60" y1="50" x2="80" y2="50" stroke="#1e40af" stroke-width="2"/>
+  <line x1="60" y1="60" x2="80" y2="60" stroke="#1e40af" stroke-width="2"/>
+  <line x1="60" y1="70" x2="75" y2="70" stroke="#1e40af" stroke-width="2"/>
+  
+  <!-- Person -->
+  <circle cx="420" cy="50" r="15" class="secondary outline"/>
+  <path d="M405 100 Q420 70 435 100" stroke="#1e40af" stroke-width="2" fill="none"/>
+</svg> 

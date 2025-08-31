@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" fill="none">
+  <style>
+    .primary { fill: #6366f1; }
+    .secondary { fill: #a5b4fc; }
+    .accent { fill: #4338ca; }
+    .outline { stroke: #4338ca; stroke-width: 2; }
+  </style>
+  <rect width="500" height="150" fill="white"/>
+  
+  <!-- Document -->
+  <rect x="100" y="30" width="120" height="90" rx="5" fill="white" class="outline"/>
+  
+  <!-- Document Lines -->
+  <line x1="115" y1="50" x2="180" y2="50" stroke="#4338ca" stroke-width="2"/>
+  <line x1="115" y1="70" x2="205" y2="70" stroke="#4338ca" stroke-width="2"/>
+  <line x1="115" y1="90" x2="190" y2="90" stroke="#4338ca" stroke-width="2"/>
+  
+  <!-- Arrow -->
+  <path d="M240 75 L280 75" stroke="#4338ca" stroke-width="3" stroke-dasharray="5 2"/>
+  <path d="M280 75 L270 65 M280 75 L270 85" stroke="#4338ca" stroke-width="3"/>
+  
+  <!-- Customized Document -->
+  <rect x="300" y="30" width="120" height="90" rx="5" class="secondary outline"/>
+  
+  <!-- Customized Document Lines -->
+  <line x1="315" y1="50" x2="380" y2="50" stroke="#4338ca" stroke-width="2"/>
+  <line x1="315" y1="70" x2="405" y2="70" stroke="#4338ca" stroke-width="2"/>
+  <line x1="315" y1="90" x2="390" y2="90" stroke="#4338ca" stroke-width="2"/>
+  
+  <!-- Magic Wand -->
+  <rect x="230" y="30" width="5" height="30" transform="rotate(45 230 30)" class="primary"/>
+  <circle cx="240" cy="20" r="8" class="primary outline"/>
+  
+  <!-- Sparkles -->
+  <path d="M260 40 L265 35 L260 30 L255 35 L260 40" class="accent"/>
+  <path d="M380 30 L385 25 L380 20 L375 25 L380 30" class="accent"/>
+  <path d="M320 110 L325 105 L320 100 L315 105 L320 110" class="accent"/>
+  <path d="M410 100 L415 95 L410 90 L405 95 L410 100" class="accent"/>
+</svg> 

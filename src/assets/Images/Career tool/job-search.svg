@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" fill="none">
+  <style>
+    .primary { fill: #8b5cf6; }
+    .secondary { fill: #c4b5fd; }
+    .accent { fill: #5b21b6; }
+    .outline { stroke: #5b21b6; stroke-width: 2; }
+  </style>
+  <rect width="500" height="150" fill="white"/>
+  
+  <!-- Magnifying Glass -->
+  <circle cx="200" cy="70" r="40" fill="white" class="outline"/>
+  <rect x="225" y="100" width="15" height="40" rx="5" transform="rotate(-45 225 100)" class="accent"/>
+  
+  <!-- Job Listings -->
+  <rect x="300" y="30" width="150" height="90" rx="5" class="secondary outline"/>
+  
+  <!-- Job Listing Lines -->
+  <line x1="310" y1="45" x2="440" y2="45" stroke="#5b21b6" stroke-width="2"/>
+  <line x1="310" y1="65" x2="420" y2="65" stroke="#5b21b6" stroke-width="2"/>
+  <line x1="310" y1="85" x2="430" y2="85" stroke="#5b21b6" stroke-width="2"/>
+  <line x1="310" y1="105" x2="400" y2="105" stroke="#5b21b6" stroke-width="2"/>
+  
+  <!-- Lightning Bolt -->
+  <path d="M80 40 L100 40 L90 70 L110 70 L70 110 L80 80 L60 80 L80 40" class="primary outline"/>
+  
+  <!-- Search Terms -->
+  <rect x="150" y="40" width="40" height="15" rx="7.5" class="primary"/>
+  <rect x="160" y="65" width="30" height="15" rx="7.5" class="primary"/>
+  <rect x="180" y="90" width="50" height="15" rx="7.5" class="primary"/>
+  
+  <!-- Cursor -->
+  <path d="M270 50 L280 60 L285 50 L270 50" class="accent"/>
+</svg> 

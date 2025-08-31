@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import ScrollingHeroSection from './components/ScrollingHeroSection';
-import BrandLogos from './components/BrandLogos';
+
 import Model3Section from './components/Model3Section';
 import WhyPersonalAI from './components/WhyPersonalAI';
 import WorkforceSection from './components/WorkforceSection';
@@ -13,10 +14,14 @@ import TeamSection from './components/TeamSection';
 import PaymentPlanSection from './components/PaymentPlanSection';
 import StatsSection from './components/StatsSection';
 import WhyChooseUsSection from './components/WhyChooseUsSection';
+import AboutUs from './components/AboutUs';
+import JobAnalytics from './components/JobAnalytics';
+import CareerTools from './components/CareerTools';
 import Footer from './components/Footer';
 import './App.css';
 
-function App() {
+// Home Page Component
+const HomePage = () => {
   useEffect(() => {
     // Smooth scrolling for anchor links
     const handleSmoothScroll = (e) => {
@@ -49,30 +54,45 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <Navbar />
-      <main>
-        <section id="home">
-          <HeroSection />
-        </section>
-        <BrandLogos />
-        <Model3Section />
-        <WhyPersonalAI />
-        <WorkforceSection />
+    <main>
+      <section id="home">
+        <HeroSection />
+      </section>
       
-        <section id="platform">
-          <NextSection />
-        </section>
-        <KnowledgeSection />
-        <ImageGallerySection />
-        <TeamSection />
-        <PaymentPlanSection />
-        <StatsSection />
-        <WhyChooseUsSection />
-        <ScrollingHeroSection />
-      </main>
-      <Footer />
-    </div>
+      <Model3Section />
+      <section id="why-personal-ai">
+        <WhyPersonalAI />
+      </section>
+      <WorkforceSection />
+    
+      <section id="platform">
+        <NextSection />
+      </section>
+      <KnowledgeSection />
+      <ImageGallerySection />
+      <TeamSection />
+      <PaymentPlanSection />
+      <StatsSection />
+      <WhyChooseUsSection />
+      <ScrollingHeroSection />
+    </main>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/job-analytics" element={<JobAnalytics />} />
+          <Route path="/career-tools" element={<CareerTools />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

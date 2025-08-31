@@ -1,0 +1,384 @@
+.about-us {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 80px 0;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.about-container.animate-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Header Section */
+.about-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1f2937;
+  font-family: 'Tasaorbiterdisplay', sans-serif;
+  margin: 0 0 16px 0;
+}
+
+.about-subtitle {
+  font-size: 18px;
+  color: #6b7280;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  font-family: 'Tasaorbiterdisplay', sans-serif;
+  margin: 0 0 40px 0;
+}
+
+/* Founders Section */
+.founders-section {
+  margin-bottom: 80px;
+}
+
+.founder-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.founder-image {
+  flex-shrink: 0;
+}
+
+.founder-image img {
+  width: 200px;
+  height: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.founder-content {
+  flex: 1;
+}
+
+.founder-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 8px 0;
+}
+
+.founder-role {
+  font-size: 16px;
+  color: #6b7280;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 24px 0;
+}
+
+.founder-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #374151;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 16px 0;
+}
+
+.linkedin-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.linkedin-link:hover {
+  text-decoration: underline;
+}
+
+/* Coaches Section */
+.coaches-section {
+  margin-bottom: 80px;
+}
+
+.coach-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.coach-image {
+  flex-shrink: 0;
+}
+
+.coach-image img {
+  width: 200px;
+  height: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.coach-content {
+  flex: 1;
+}
+
+.coach-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 8px 0;
+}
+
+.coach-role {
+  font-size: 16px;
+  color: #6b7280;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 24px 0;
+}
+
+.coach-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #374151;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 16px 0;
+}
+
+/* Approach Section */
+.approach-section {
+  margin-bottom: 80px;
+}
+
+.approach-intro {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #374151;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.strategy-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.strategy-step {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.step-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 16px 0;
+}
+
+.step-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #374151;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+/* Mission, Vision, Values Section */
+.mvv-section {
+  margin-bottom: 80px;
+}
+
+.mvv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px;
+}
+
+.mvv-card {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.mvv-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 16px 0;
+}
+
+.mvv-content {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #374151;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+.values-list p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #374151;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 12px 0;
+}
+
+.values-list p:last-child {
+  margin-bottom: 0;
+}
+
+/* Contact Section */
+.contact-section {
+  text-align: center;
+}
+
+.company-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 16px 0;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #374151;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 8px 0;
+}
+
+.contact-info p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-email a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.contact-email a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-container {
+    padding: 0 20px;
+  }
+
+  .founder-card,
+  .coach-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .founder-image img,
+  .coach-image img {
+    width: 150px;
+    height: 180px;
+    margin: 0 auto;
+  }
+
+  .mvv-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    padding: 60px 0;
+  }
+
+  .about-container {
+    padding: 0 16px;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .about-header {
+    margin-bottom: 60px;
+  }
+
+  .founders-section,
+  .coaches-section,
+  .approach-section,
+  .mvv-section {
+    margin-bottom: 60px;
+  }
+
+  .founder-card,
+  .coach-card {
+    padding: 24px;
+  }
+
+  .strategy-step,
+  .mvv-card {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .about-container {
+    padding: 0 12px;
+  }
+
+  .founder-card,
+  .coach-card {
+    padding: 20px;
+  }
+
+  .strategy-step,
+  .mvv-card {
+    padding: 20px;
+  }
+
+  .mvv-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

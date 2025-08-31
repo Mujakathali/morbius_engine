@@ -8,30 +8,44 @@ const WhyPersonalAI = () => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          // Delay dashboard animation
-          setTimeout(() => {
-            setIsDashboardVisible(true);
-          }, 500);
-        }
-      },
-      {
-        threshold: 0.3,
-        rootMargin: '-50px 0px'
-      }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    // Initially hide the section
+    const section = sectionRef.current;
+    if (section) {
+      section.style.display = 'none';
     }
 
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+    // Listen for Model3 animation completion
+    const handleModel3Complete = () => {
+      if (section) {
+        section.style.display = 'flex';
       }
+      
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            // Delay dashboard animation
+            setTimeout(() => {
+              setIsDashboardVisible(true);
+            }, 500);
+          }
+        },
+        {
+          threshold: 0.3,
+          rootMargin: '-50px 0px'
+        }
+      );
+
+      if (sectionRef.current) {
+        observer.observe(sectionRef.current);
+      }
+    };
+
+    // Wait for Model3 animation to complete before showing
+    window.addEventListener('model3AnimationComplete', handleModel3Complete);
+
+    return () => {
+      window.removeEventListener('model3AnimationComplete', handleModel3Complete);
     };
   }, []);
 

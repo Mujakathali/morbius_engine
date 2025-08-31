@@ -11,6 +11,9 @@
   align-items: center;
   justify-content: center;
   padding: 80px 0;
+  position: relative;
+  z-index: 5;
+  margin-top: 0;
 }
 
 .why-personal-ai-container {

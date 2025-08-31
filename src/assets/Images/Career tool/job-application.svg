@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" fill="none">
+  <style>
+    .primary { fill: #14b8a6; }
+    .secondary { fill: #5eead4; }
+    .accent { fill: #0f766e; }
+    .outline { stroke: #0f766e; stroke-width: 2; }
+  </style>
+  <rect width="500" height="150" fill="white"/>
+  
+  <!-- Envelope -->
+  <path d="M100 50 L250 50 L250 110 L100 110 Z" fill="white" class="outline"/>
+  <path d="M100 50 L175 80 L250 50" stroke="#0f766e" stroke-width="2" fill="none"/>
+  <path d="M100 110 L150 80 M250 110 L200 80" stroke="#0f766e" stroke-width="2" fill="none"/>
+  
+  <!-- Resume -->
+  <rect x="300" y="40" width="80" height="100" rx="5" fill="white" class="outline"/>
+  <line x1="310" y1="55" x2="370" y2="55" stroke="#0f766e" stroke-width="2"/>
+  <line x1="310" y1="70" x2="370" y2="70" stroke="#0f766e" stroke-width="2"/>
+  <line x1="310" y1="85" x2="350" y2="85" stroke="#0f766e" stroke-width="2"/>
+  <line x1="310" y1="100" x2="360" y2="100" stroke="#0f766e" stroke-width="2"/>
+  <line x1="310" y1="115" x2="340" y2="115" stroke="#0f766e" stroke-width="2"/>
+  
+  <!-- Arrow -->
+  <path d="M400 75 L430 75" stroke="#0f766e" stroke-width="3"/>
+  <path d="M430 75 L420 65 M430 75 L420 85" stroke="#0f766e" stroke-width="3"/>
+  
+  <!-- Company Building -->
+  <rect x="440" y="40" width="40" height="70" rx="2" class="secondary outline"/>
+  <rect x="450" y="50" width="10" height="10" class="accent"/>
+  <rect x="465" y="50" width="10" height="10" class="accent"/>
+  <rect x="450" y="70" width="10" height="10" class="accent"/>
+  <rect x="465" y="70" width="10" height="10" class="accent"/>
+  <rect x="455" y="90" width="10" height="20" class="accent"/>
+  
+  <!-- Send Button -->
+  <rect x="160" y="120" width="60" height="20" rx="10" class="primary outline"/>
+  <text x="175" y="135" font-family="Arial" font-size="12" fill="#0f766e">SEND</text>
+  
+  <!-- Checkmark -->
+  <circle cx="80" cy="30" r="15" class="secondary outline"/>
+  <path d="M70 30 L80 40 L95 25" stroke="#0f766e" stroke-width="2" fill="none"/>
+</svg> 

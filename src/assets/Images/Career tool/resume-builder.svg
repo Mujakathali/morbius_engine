@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" fill="none">
+  <style>
+    .primary { fill: #f59e0b; }
+    .secondary { fill: #fcd34d; }
+    .accent { fill: #92400e; }
+    .outline { stroke: #92400e; stroke-width: 2; }
+  </style>
+  <rect width="500" height="150" fill="white"/>
+  
+  <!-- Document -->
+  <rect x="150" y="25" width="200" height="100" rx="5" fill="white" class="outline"/>
+  
+  <!-- Document Lines -->
+  <line x1="170" y1="45" x2="250" y2="45" stroke="#92400e" stroke-width="2"/>
+  <line x1="170" y1="65" x2="330" y2="65" stroke="#92400e" stroke-width="2"/>
+  <line x1="170" y1="85" x2="300" y2="85" stroke="#92400e" stroke-width="2"/>
+  <line x1="170" y1="105" x2="280" y2="105" stroke="#92400e" stroke-width="2"/>
+  
+  <!-- Photo Area -->
+  <rect x="280" y="35" width="50" height="20" rx="2" class="secondary outline"/>
+  
+  <!-- Pencil -->
+  <path d="M100 50 L130 30 L140 45 L110 65 L100 50" class="primary outline"/>
+  <path d="M100 50 L95 65 L110 65" class="accent"/>
+  <rect x="130" y="30" width="15" height="5" transform="rotate(-25 130 30)" class="accent"/>
+  
+  <!-- Stars -->
+  <path d="M380 40 L385 50 L395 52 L387 60 L390 70 L380 65 L370 70 L373 60 L365 52 L375 50 L380 40" class="secondary outline"/>
+  <path d="M400 90 L403 95 L408 96 L404 100 L405 105 L400 103 L395 105 L396 100 L392 96 L397 95 L400 90" class="secondary outline"/>
+  <path d="M80 100 L83 105 L88 106 L84 110 L85 115 L80 113 L75 115 L76 110 L72 106 L77 105 L80 100" class="secondary outline"/>
+</svg> 

@@ -4,6 +4,7 @@ import backgroundImage from '../assets/Images/6781a3eddbe04f983742a87c_model-3-b
 
 const Model3Section = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [animationComplete, setAnimationComplete] = useState(false);
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -11,6 +12,12 @@ const Model3Section = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
+          // Set animation complete after all cards finish animating (1.2s delay + 0.8s animation)
+          setTimeout(() => {
+            setAnimationComplete(true);
+            // Dispatch custom event to notify next section
+            window.dispatchEvent(new CustomEvent('model3AnimationComplete'));
+          }, 2000);
         }
       },
       {

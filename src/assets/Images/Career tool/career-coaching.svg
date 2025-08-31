@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" fill="none">
+  <style>
+    .primary { fill: #10b981; }
+    .secondary { fill: #6ee7b7; }
+    .accent { fill: #065f46; }
+    .outline { stroke: #065f46; stroke-width: 2; }
+  </style>
+  <rect width="500" height="150" fill="white"/>
+  
+  <!-- Coach -->
+  <circle cx="150" cy="50" r="20" class="primary outline"/>
+  <rect x="130" y="70" width="40" height="50" rx="5" class="primary outline"/>
+  <line x1="130" y1="80" x2="110" y2="100" stroke="#065f46" stroke-width="2"/>
+  <line x1="170" y1="80" x2="190" y2="100" stroke="#065f46" stroke-width="2"/>
+  
+  <!-- Client -->
+  <circle cx="300" cy="60" r="15" class="secondary outline"/>
+  <rect x="285" y="75" width="30" height="40" rx="5" class="secondary outline"/>
+  <line x1="285" y1="85" x2="270" y2="100" stroke="#065f46" stroke-width="2"/>
+  <line x1="315" y1="85" x2="330" y2="100" stroke="#065f46" stroke-width="2"/>
+  
+  <!-- Speech Bubble -->
+  <path d="M200 40 L220 40 Q230 40 230 50 L230 60 Q230 70 220 70 L180 70 Q170 70 170 60 L170 50 Q170 40 180 40 L200 40" fill="white" class="outline"/>
+  <circle cx="185" cy="55" r="2" fill="#065f46"/>
+  <circle cx="200" cy="55" r="2" fill="#065f46"/>
+  <circle cx="215" cy="55" r="2" fill="#065f46"/>
+  
+  <!-- Career Path -->
+  <path d="M50 120 Q150 80 250 120 Q350 80 450 120" stroke="#10b981" stroke-width="3" stroke-dasharray="5 3" fill="none"/>
+  <circle cx="250" cy="120" r="8" class="accent"/>
+  <path d="M450 120 L440 115 L440 125 L450 120" fill="#10b981"/>
+</svg> 
